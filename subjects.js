@@ -5,7 +5,7 @@ const subjects = [
     qb1: "https://drive.google.com/file/d/1AMpdasHFaaQ_VnTO5uXVJsXhK0OD9tGW/view",
     qb2: "https://drive.google.com/file/d/1W7uvueoce4tlNBh8bUq0gcxVkLZhGkyq/view",
     ak1: "https://drive.google.com/file/d/1TR4pbAxI11iDocwf2CYWlXaJ8d3Upcx2/view?usp=drivesdk",
-    ak2: "https://drive.google.com/file/d/1Scs9K2InJJBs-GsUJCJh_QpMhQjsfgMc/view?usp=drivesdk",
+    ak2: "https://drive.google.com/file/d/12V_UdpMmw1gIaJBWJHswahvXgYLBirIR/view?usp=drivesdk",
     semqbwithans: "https://drive.google.com/file/d/1s9E1qXI4sKJpppymAX9g674ZokkbboDM/view"
   },
   {
