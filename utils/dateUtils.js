@@ -15,10 +15,26 @@ export const formatDateToDataKey = (date) => {
 export const getActiveMeal = (now) => {
   const mins = now.getHours() * 60 + now.getMinutes();
 
-  if (mins < timeToMinutes(MEAL_TIMINGS.breakfast.end)) return 'breakfast';
-  if (mins < timeToMinutes(MEAL_TIMINGS.lunch.end)) return 'lunch';
-  if (mins < timeToMinutes(MEAL_TIMINGS.tea.end)) return 'tea';
-  if (mins < timeToMinutes(MEAL_TIMINGS.dinner.end)) return 'dinner';
+  const b = MEAL_TIMINGS.breakfast;
+  const l = MEAL_TIMINGS.lunch;
+  const t = MEAL_TIMINGS.tea;
+  const d = MEAL_TIMINGS.dinner;
 
-  return 'next_day_breakfast';
+  const between = (s, e) =>
+    mins >= timeToMinutes(s) && mins <= timeToMinutes(e);
+
+  // Current meals
+  if (between(b.start, b.end)) return 'breakfast';
+  if (between(l.start, l.end)) return 'lunch';
+  if (between(t.start, t.end)) return 'tea';
+  if (between(d.start, d.end)) return 'dinner';
+
+  // Next meals
+  if (mins < timeToMinutes(b.start)) return 'breakfast';
+  if (mins < timeToMinutes(l.start)) return 'lunch';
+  if (mins < timeToMinutes(t.start)) return 'tea';
+  if (mins < timeToMinutes(d.start)) return 'dinner';
+
+  // After dinner → next day breakfast
+  return 'breakfast';
 };
