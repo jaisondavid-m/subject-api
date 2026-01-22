@@ -12,7 +12,11 @@ export const formatDateToDataKey = (date) => {
   return `${d}-${m}-${y}`;
 };
 
-export const getActiveMeal = (now) => {
+export const getActiveMeal = () => {
+  const now = new Date(
+    new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' })
+  );
+
   const mins = now.getHours() * 60 + now.getMinutes();
 
   const b = MEAL_TIMINGS.breakfast;
@@ -23,18 +27,15 @@ export const getActiveMeal = (now) => {
   const between = (s, e) =>
     mins >= timeToMinutes(s) && mins <= timeToMinutes(e);
 
-  // Current meals
   if (between(b.start, b.end)) return 'breakfast';
   if (between(l.start, l.end)) return 'lunch';
   if (between(t.start, t.end)) return 'tea';
   if (between(d.start, d.end)) return 'dinner';
 
-  // Next meals
   if (mins < timeToMinutes(b.start)) return 'breakfast';
   if (mins < timeToMinutes(l.start)) return 'lunch';
   if (mins < timeToMinutes(t.start)) return 'tea';
   if (mins < timeToMinutes(d.start)) return 'dinner';
 
-  // After dinner → next day breakfast
   return 'breakfast';
 };

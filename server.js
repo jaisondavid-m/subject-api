@@ -21,7 +21,11 @@ app.get("/api/subjects", (req, res) => {
     data: subjects
   });
 });
-app.use('/api/mess', messRoutes);
+// app.use('/api/mess', messRoutes);
+app.use('/api/mess', (req, res, next) => {
+  res.set('Cache-Control', 'no-store');
+  next();
+}, messRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
