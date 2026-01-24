@@ -1,19 +1,10 @@
 const subjects = [
   {
-    code: "22PH102",
-    name: "ENGINEERING PHYSICS",
-    qb1: "https://drive.google.com/file/d/1Rz12cLYbCulYXFnTYkO7nYM5p_O43NBj/view",
-    qb2: "https://drive.google.com/file/d/1ddivnmWnfv5YvWX5EwDVIq-GNhyIIMm3/view",
-    ak1: "https://drive.google.com/file/d/153GAPcOqOvwaqETazPUJ2-D6SjAPD962/view?usp=drivesdk",
-    ak2: "https://drive.google.com/file/d/1bM-10o00RoXj5kkihD7IvCI48P7G_lHu/view?usp=drivesdk",
-    semqbwithans: "https://drive.google.com/file/d/1toH56sk8jyqGYa4DjxjINO12yN6VIkC4/view"
-  },
-  {
     code: "22GE004",
     name: "BASICS OF ELECTRONICS ENGINEERING",
     qb1: "https://drive.google.com/file/d/1gAWZ8gWJ77lIPW7D2cIHymytV1U9WpuQ/view",
     qb2: "https://drive.google.com/file/d/1zZ7rqdTKPb2xz6pQihuOWhTO2fXSEG6z/view",
-    ak1: null,
+    ak1: "https://drive.google.com/file/d/1Ttksflz82KNMfL0FAqxRVGyk7i3uC2U0/view?usp=drivesdk",
     ak2: null,
     semqbwithans: null
   },
@@ -62,6 +53,15 @@ const subjects = [
     ak2: "https://drive.google.com/file/d/12V_UdpMmw1gIaJBWJHswahvXgYLBirIR/view?usp=drivesdk",
     semqbwithans: "https://drive.google.com/file/d/1s9E1qXI4sKJpppymAX9g674ZokkbboDM/view"
   },
+  {
+    code: "22PH102",
+    name: "ENGINEERING PHYSICS",
+    qb1: "https://drive.google.com/file/d/1Rz12cLYbCulYXFnTYkO7nYM5p_O43NBj/view",
+    qb2: "https://drive.google.com/file/d/1ddivnmWnfv5YvWX5EwDVIq-GNhyIIMm3/view",
+    ak1: "https://drive.google.com/file/d/153GAPcOqOvwaqETazPUJ2-D6SjAPD962/view?usp=drivesdk",
+    ak2: "https://drive.google.com/file/d/1bM-10o00RoXj5kkihD7IvCI48P7G_lHu/view?usp=drivesdk",
+    semqbwithans: "https://drive.google.com/file/d/1toH56sk8jyqGYa4DjxjINO12yN6VIkC4/view"
+  }
 ];
 
 export default subjects;
