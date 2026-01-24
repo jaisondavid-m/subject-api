@@ -5,7 +5,7 @@ const subjects = [
     qb1: "https://drive.google.com/file/d/1gAWZ8gWJ77lIPW7D2cIHymytV1U9WpuQ/view",
     qb2: "https://drive.google.com/file/d/1zZ7rqdTKPb2xz6pQihuOWhTO2fXSEG6z/view",
     ak1: "https://drive.google.com/file/d/1Ttksflz82KNMfL0FAqxRVGyk7i3uC2U0/view?usp=drivesdk",
-    ak2: null,
+    ak2: "https://drive.google.com/file/d/1Na4U2pORBe9Fuk7LbNtu7a4Ad9x0FmkE/view?usp=drivesdk",
     semqbwithans: null
   },
   {
