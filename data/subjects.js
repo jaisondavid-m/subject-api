@@ -1,21 +1,12 @@
 const subjects = [
   {
-    code: "22CH103",
-    name: "ENGINEERING CHEMISTRY I",
-    qb1: "https://drive.google.com/file/d/1xtuVorFFOlxQRRaWNcWwCUHS3QOgUliQ/view",
-    qb2: "https://drive.google.com/file/d/1M3zgMJgS9jSUMQmHAN-ncPC7ACKqs1J-/view",
-    ak1: "https://drive.google.com/file/d/19WAGbRig4f6g0EzfgnjprfjmVNaofMU_/view?usp=drivesdk",
-    ak2: "https://drive.google.com/file/d/1X3CiBKEfTJMukwsQZ6uHpsaMPlplfKmg/view?usp=drivesdk",
-    semqbwithans: "https://drive.google.com/file/d/1C0rQQaDunjMoK-uRLtxoAzHYlX3Q6a29/view"
-  },
-  {
     code: "22GE001",
     name: "FUNDAMENTALS OF COMPUTING",
     qb1: "https://drive.google.com/file/d/1BqOhmS4z8gMdvbnjQGMsACN68wuMZ0Nv/view",
     qb2: "https://drive.google.com/file/d/1dQzJ2WdmyskKTG0JdGrL_1aHIlaov1WR/view",
-    ak1: null,
+    ak1: "https://drive.google.com/file/d/103DjNCSc7OUWPOsItHKjWMhpmWTSaAUu/view?usp=drivesdk",
     ak2: null,
-    semqbwithans: null
+    semqbwithans: "https://drive.google.com/file/d/1RMr0VXBNN5B_g32Rer_2UCMIvxVOtYLv/view?pli=1"
   },
   {
     code: "22HS002",
@@ -61,6 +52,15 @@ const subjects = [
     ak1: "https://drive.google.com/file/d/1Ttksflz82KNMfL0FAqxRVGyk7i3uC2U0/view?usp=drivesdk",
     ak2: "https://drive.google.com/file/d/1Na4U2pORBe9Fuk7LbNtu7a4Ad9x0FmkE/view?usp=drivesdk",
     semqbwithans: "https://drive.google.com/file/d/1qzRyCwVgmGkCi8Z-NSclyPw3QSIP5LWB/view"
+  },
+  {
+    code: "22CH103",
+    name: "ENGINEERING CHEMISTRY I",
+    qb1: "https://drive.google.com/file/d/1xtuVorFFOlxQRRaWNcWwCUHS3QOgUliQ/view",
+    qb2: "https://drive.google.com/file/d/1M3zgMJgS9jSUMQmHAN-ncPC7ACKqs1J-/view",
+    ak1: "https://drive.google.com/file/d/19WAGbRig4f6g0EzfgnjprfjmVNaofMU_/view?usp=drivesdk",
+    ak2: "https://drive.google.com/file/d/1X3CiBKEfTJMukwsQZ6uHpsaMPlplfKmg/view?usp=drivesdk",
+    semqbwithans: "https://drive.google.com/file/d/1C0rQQaDunjMoK-uRLtxoAzHYlX3Q6a29/view"
   }
 ];
 
